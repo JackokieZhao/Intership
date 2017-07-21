@@ -1,0 +1,7 @@
+构建数据
+目标： 一共 300 个食物 label，每个 label 有 500 张图片。
+      每个 label 创建一个目录，目录名称就是 label 名。
+      从 Hive 搜索每个 label 的食物，得到 item_photo_hash，从 CDN 爬取食物图片，存入目录。
+      每个 label 爬取 600 张图片。
+      通过筛选+检查，每个 label 保留 500 张左右图片。
+      “数据筛选” 步骤完成后，我们根据标出的 "bad label" 数量，补充新的 label 进去。
